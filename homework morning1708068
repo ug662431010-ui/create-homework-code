@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Semantic Layout</title>
+  <style>
+    /* Reset ค่าเริ่มต้น */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #333 url('https://i.ibb.co/SR7RkVp/dot-bg.png'); /* พื้นหลังลายจุด */
+      padding: 10px;
+    }
+
+    /* กรอบใหญ่สีขาวรอบทั้งหมด */
+    .container {
+      border: 10px solid #fff;
+      background: #fff;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    /* Header */
+    header {
+      background: #b3b3b3;
+      padding: 20px;
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    /* Navigation */
+    nav {
+      background: #ff3399;
+      padding: 15px;
+      text-align: center;
+      color: white;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    /* Layout หลัก */
+    main {
+      display: flex;
+      min-height: 400px;
+    }
+
+    /* Sidebar */
+    aside {
+      background: #66a68d;
+      flex: 1;
+      padding: 20px;
+      text-align: center;
+      color: white;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    /* Content */
+    .main-content {
+      background: #99cc66;
+      flex: 3;
+      padding: 20px;
+      text-align: center;
+    }
+
+    /* MAIN CONTENT หัวข้อ */
+    .main-content h2 {
+      font-size: 22px;
+      margin-bottom: 20px;
+      font-weight: bold;
+    }
+
+    /* Section */
+    section {
+      background: #0066cc;
+      margin-bottom: 20px;
+      padding: 40px;
+      color: white;
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    /* Article */
+    article {
+      background: #0099cc;
+      padding: 40px;
+      color: white;
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    /* Footer */
+    footer {
+      background: #ff6633;
+      padding: 20px;
+      text-align: center;
+      font-size: 20px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>HEADER</header>
+    <nav>NAVIGATION</nav>
+
+    <main>
+      <aside>SIDEBAR</aside>
+      <div class="main-content">
+        <h2>MAIN CONTENT</h2>
+        <section>Section</section>
+        <article>ARTICLE</article>
+      </div>
+    </main>
+
+    <footer>FOOTER</footer>
+  </div>
+</body>
+</html>
